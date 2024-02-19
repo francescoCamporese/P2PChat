@@ -1,0 +1,4 @@
+@mixin theme-colors($bg-col, $font-col) {
+  background-color: $bg-col;
+  color: $font-col;
+}

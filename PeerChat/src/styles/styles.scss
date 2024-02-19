@@ -1,0 +1,68 @@
+@import "mixins";
+@import "variables";
+
+.dark {
+  @include theme-colors($color-dark, $color-light);
+}
+
+.light {
+  @include theme-colors($color-light, $color-dark);
+}
+
+.message-container {
+  border-bottom: 1px dotted $color-separator;
+  margin: {
+    left: 10%;
+    right: 10%;
+  }
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.message-from {
+  color: $color-from;
+  font-weight: bold;
+}
+
+.message-text {
+  font-style: italic;
+  white-space: pre-wrap;
+}
+
+.message-time {
+  text-align: right;
+}
+
+.sticky-bottom {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+}
+
+.textarea-formessage {
+  resize: none;
+}
+
+.twocols-button {
+  width: auto;
+}
+
+.twocols-button-fixedheight {
+  align-self: center;
+  height: 100%;
+}
+
+.twocols-container {
+  display: flex;
+  width: 100%;
+}
+
+.twocols-container-bordered {
+  border-bottom: 1px solid $color-separator;
+}
+
+.twocols-side {
+  flex: 1;
+}
